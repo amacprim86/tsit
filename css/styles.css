@@ -145,6 +145,7 @@ font-style: normal;
   cursor: pointer;
   display: flex;
   align-items: center;
+
 }
 .section1 .s1_pullup .f-pretab .b-wrap {
   display: flex;
@@ -174,9 +175,15 @@ transform: rotate(90deg);
   width: 500px;
   height: 800px;
   background-color: red;
-  bottom: 700px;
+  bottom: 0px;
   position: relative;
+  transition: all .5s ease-in-out;
 }
+.theform.form-up {
+  bottom: 700px;
+  transition: all .5s ease-in-out;
+}
+
 .theform .f-close {
   height: 90px;
   width: 81px;
@@ -907,27 +914,321 @@ a.active:after {
   min-height: 950px;
   display: flex;
 }
+/* SEC 9 - CONTACT US */
 .section9 .s9-l {
   width: 50%;
   min-height: 950px;
   background-color: #fff;
   position: relative;
-}
-.section9 .s9-l .s9-wrap {
-  width: 539px;
-  height: 750px;
-  background-image: url("../");
+  display: flex;
 }
 
+.section9 .s9-l .s9-wrap {
+  width: 550px;
+  height: 750px;
+  background-image: url("../images/s3_dallascowboys.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 3;
+  margin: auto;
+}
+.s9-wrap .s9-cl {
+  background-color: rgba(93, 94, 113, 0.83);
+  width: 100%;
+  height: 750px;
+  display: flex;
+  align-items: center;
+}
+.s9-wrap .s9-cl .s9text {
+}
+.s9-wrap .s9-cl .s9text h1 {
+  font-family: sofia-pro;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 51px;
+  color: #FFFFFF;
+  padding-left: 53px;
+}
+
+.s9-wrap .s9-cl .s9text .s9box {
+  padding-left: 58px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.s9-wrap .s9-cl .s9text .s9box:nth-of-type(1) {
+  padding-top: 46px;
+}
+.s9-wrap .s9-cl .s9text .s9box img.s9map {
+  height: 38px;
+  width: auto;
+  padding-left: 6px;
+}
+.s9-wrap .s9-cl .s9text .s9box img.s9email {
+  height: 32px;
+  width: auto;
+}
+.s9-wrap .s9-cl .s9text .s9box img.s9phone {
+  height: 38px;
+  width: auto;
+}
+.s9-wrap .s9-cl .s9text .s9box h3 {
+  font-family: sofia-pro;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-left: 52px;
+}
+.s9-wrap .s9-cl .s9text .s9box a.s9e h3 {
+  font-family: sofia-pro;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-left: 46px;
+  text-decoration: underline;
+}
+.s9-wrap .s9-cl .s9text .s9box a.s9p h3 {
+  font-family: sofia-pro;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+/* SEC 9 - LEFT TOP BG COLOR */
 .section9 .s9-l .s9l-bg {
   position: absolute;
   top: 0px;
   width: 100%;
   height: 470px;
   background-color: #F3F4F6;
+  z-index: 2;
 }
+/* SEC 9 - RIGHT (FORM) */
 .section9 .s9-r {
   width: 50%;
   min-height: 950px;
   background-color: #28282A;
+  display: flex;
+  align-items: center;
+}
+.section9 .s9-r .se9-form {
+  width: 530px;
+  height: 860px;
+  margin: auto;
+}
+.section9 .s9-r .se9-form h1 {
+  font-family: sofia-pro;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 51px;
+  color: #FFFFFF;
+}
+.section9 .s9-r .se9-form form {
+  width: 100%;
+  height: auto;
+}
+form .lin1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+form .lin1 .l1-l {
+  width: 237px;
+  display: flex;
+  flex-direction: column;
+}
+form .lin1 .l1-r {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-family: sofia-pro;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+form input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: transparent;
+  opacity: 0.56;
+  height: 57px;
+  color: #fff;
+}
+form .lin2 {
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+form .lin3 {
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+select#inter {
+  -webkit-appearance: textarea;
+}
+.selectdiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectdiv:after {
+    content: '\f0d7';
+    font: normal normal normal 17px/1 FontAwesome;
+    color: #C7C7C7;
+    right: 11px;
+    top: 12px;
+    height: 57px;
+    padding: 20px 25px 0px 30px;
+    border-left: 1px solid #65666a;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  font-family: sofia-pro;
+  font-size: 19px;
+  line-height: 23px;
+  display: block;
+  width: 100%;
+  height: 57px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  color: #FFFFFF;
+  background: transparent;
+  opacity: 0.86;
+  border: 1px solid #FFFFFF;
+  -ms-word-break: normal;
+  word-break: normal;
+  margin-top: 12px;
+}
+
+/* SEC 9 FORM, Field 5 */
+
+form .lin5 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+form .lin5 .l1-l {
+  width: 274px;
+  display: flex;
+  flex-direction: column;
+}
+form .lin5 .l1-r {
+  width: 219px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SEC 9 FORM, Field 6 TextArea */
+
+form .lin6 {
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+form .lin6 textarea.f6 {
+  background-color: transparent;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF;
+  opacity: 0.56;
+  margin-top: 8px;
+  height: 90px;
+  color: #fff;
+}
+/* SEC 9 FORM, Field 7 ReCAPTCHA + SUBMIT */
+
+form .lin7 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  align-items: center;
+}
+form .lin7 .l1-l {
+  width: 274px;
+  display: flex;
+  flex-direction: column;
+}
+form .lin7 .l1-r {
+  width: 181px;
+  display: flex;
+  flex-direction: column;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: transparent;
+  padding: 14px 12px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: none;
+  font-family: sofia-pro;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* FOOTER ".ft" */
+
+.ft {
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  background: linear-gradient(128.28deg, #1182E3 0%, #002A75 100%);
 }

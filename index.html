@@ -8,7 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Home - TsiT</title>
-
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <!-- FONT(s) CSS -->
@@ -342,11 +343,96 @@
   <div class="section9">
     <div class="s9-l">
       <div class="s9-wrap">
+        <div class="s9-cl">
+          <div class="s9text">
+            <h1>Contact Us Today</h1>
+            <div class="s9box">
+              <img src="images/s9_001-placeholder.png" class="s9map">
+              <h3>Address Here<br>City, State 00000</h3>
+            </div>
+            <div class="s9box">
+              <img src="images/s9_002-email.png" class="s9email">
+              <a href="" class="s9e"><h3>mail@example.com</h3></a>
+            </div>
+            <div class="s9box">
+              <img src="images/s9_003-telephone.png" class="s9phone">
+              <a href="" class="s9p"><h3>000.000.000</h3></a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="s9l-bg">
       </div>
     </div>
     <div class="s9-r">
+      <div class="se9-form">
+        <h1>Have a Question or a Comment?</h1>
+        <form>
+          <div class="lin1">
+            <div class="l1-l">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="">
+            </div>
+            <div class="l1-r">
+              <label for="fname">Last Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="">
+            </div>
+          </div>
+          <div class="lin2">
+            <label for="fname">Company</label>
+            <input type="text" id="fname" name="firstname" placeholder="">
+          </div>
+          <div class="lin3">
+            <label for="inter">Interested In...</label>
+            <div class="selectdiv ">
+              <label>
+                  <select>
+                      <option selected> Select one </option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Last long option</option>
+                  </select>
+              </label>
+            </div>
+          </div>
+          <div class="lin3">
+            <label for="inter">Request A Form</label>
+            <div class="selectdiv ">
+              <label>
+                  <select>
+                      <option selected> Select one </option>
+                      <option>Insurance 1</option>
+                      <option>Insurance 2</option>
+                      <option>Last long option Insurance 3</option>
+                  </select>
+              </label>
+            </div>
+          </div>
+          <div class="lin5">
+            <div class="l1-l">
+              <label for="fname">Email</label>
+              <input type="text" id="fname" name="firstname" placeholder="">
+            </div>
+            <div class="l1-r">
+              <label for="fname">Phone</label>
+              <input type="text" id="fname" name="firstname" placeholder="">
+            </div>
+          </div>
+          <div class="lin6">
+            <label for="f6">Comments or Questions</label>
+            <textarea class="f6" rows="4" cols="50" name="comment" form="usrform">
+            </textarea>
+          </div>
+          <div class="lin7">
+            <div class="l1-l">
+              <div class="g-recaptcha" data-sitekey="6LcoVpIUAAAAAO_Iomg9QEBh364O258WHSt0x49B"></div>
+            </div>
+            <div class="l1-r">
+              <input type="submit" value="Submit Form →">
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -355,22 +441,26 @@
 </body>
 
 <footer>
+  <div class="ft">
+  </div>
 </footer>
 
 <!-- FORM, SEC 1 -->
 <script>
 $(document).ready(function(){
   $("#vn").click(function(){
-    $("#vn-info").slideToggle(50);
+    $("#vn-info").slideToggle(250);
     $(".f-wrap").toggleClass("f-pre", [200] );
     $('.f-pretab').toggleClass("no-show", [200] );
     $('h1.contact-hero').toggleClass("no-show", [200] );
     $('.s1 .f-wrap .pull img').toggleClass("img_text_rotate", [200] );
+    $( '.theform' ).addClass( "form-up" );
   });
   $(".f-close").click(function(){
-    $("#vn-info").slideToggle(50);
+    $("#vn-info").slideToggle(250);
     $(".f-wrap").toggleClass("f-pre", [200] );
     $('.f-pretab').toggleClass("no-show", [200] );
+    $( '.theform' ).removeClass( "form-up" );
 });
 });
 </script>
