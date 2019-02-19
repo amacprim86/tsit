@@ -545,15 +545,19 @@ $(document).ready(function(){
     $('h1.contact-hero').toggleClass("no-show", [200] );
     $('.s1 .f-wrap .pull img').toggleClass("img_text_rotate", [200] );
     $( '.theform' ).addClass( "form-up" );
+    $( '.b-wrap img.slider' ).addClass( "turnarrow" );
+    $( '.theform .f-close .iclose' ).addClass( "icloser" );
     $( ".f-pretab" ).slideDown( 100, function() {
   // Animation complete.
 });
   });
   $(".f-close").click(function(){
-    $("#vn-info").slideToggle(250);
+    $("#vn-info").slideToggle(450);
     $(".f-wrap").toggleClass("f-pre", [200] );
     $('.f-pretab').toggleClass("no-show", [200] );
     $( '.theform' ).removeClass( "form-up" );
+    $( '.b-wrap img.slider' ).removeClass( "turnarrow" );
+    $( '.theform .f-close .iclose' ).removeClass( "icloser" );
 });
 });
 </script>

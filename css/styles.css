@@ -170,8 +170,18 @@ font-style: normal;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
--ms-transform: rotate(90deg);
-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.turnarrow {
+  -webkit-transform: rotate(-90deg) !important;
+  -moz-transform: rotate(90deg) !important;
+  -o-transform: rotate(-90deg) !important;
+  -ms-transform: rotate(-90deg) !important;
+  transform: rotate(-90deg) !important;
+  transition: all .25s ease-in-out;
+  opacity: 0;
+  height: 0px;
 }
 /* SEC 1, SLIDE UP FORM */
 .theform {
@@ -429,8 +439,19 @@ adp.coi.center@aon.com
 .theform .f-close .iclose {
   height: 14px;
   width: auto;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
   margin: auto;
+  transition: all .50s ease-in-out;
+  opacity: 0;
+}
+.icloser {
+  -webkit-transform: rotate(-90deg) !important;
+  -moz-transform: rotate(-90deg) !important;
+  -o-transform: rotate(-90deg) !important;
+  -ms-transform: rotate(-90deg) !important;
+  transform: rotate(-90deg) !important;
+  transition: all .45s ease-in-out;
+  opacity: 1 !important;
 }
 
 .no-show {
