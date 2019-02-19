@@ -73,9 +73,9 @@ font-style: normal;
 }
 .section1 .s1_contain img.img1_2-2 { /* Parkland Building */
   position: absolute;
-  bottom: -50px;
+  bottom: -107px;
   right: 0px;
-  height: 1150px;
+  height: 1180px;
   width: auto;
   z-index: 3;
 }
@@ -674,7 +674,8 @@ adp.coi.center@aon.com
   flex-direction: column;
   padding-top: 200px;
   padding-bottom: 190px;
-  padding-left: 80px;
+  width: calc(100% - 180px);
+  margin: auto;
 }
 .section4 .sec4_wrap h1 {
   font-family: sofia-pro;
@@ -688,10 +689,10 @@ adp.coi.center@aon.com
   flex-wrap: wrap;
   justify-content: flex-start;
   padding-top: 80px;
-  width: 1300px;
+  width: 100%;
 }
 .section4 .sec4_wrap .s4 .s4box {
-  width: 400px;
+  width: 385px;
   height: 400px;
   margin: auto;
 }
@@ -705,10 +706,10 @@ adp.coi.center@aon.com
 }
 .section4 .sec4_wrap .s4 .s4box:nth-of-type(7) {
   margin-left: 0px;
-  margin-right: 32px;
+  margin-right: calc(18.6% - 180px);
 }
 .section4 .sec4_wrap .s4 .s4box:nth-of-type(8) {
-  margin-left: 16px;
+  margin-left: 0px;
 }
 .section4 .sec4_wrap .s4 .s4box .s4_imghold {
   height: 70px;
@@ -1580,4 +1581,73 @@ input[type=submit] {
   color: #FFFFFF;
   text-decoration: none;
   padding-left: 12px;
+}
+
+/* -- MEDIA QUERIES -- */
+/*  Sorted By Section  */
+/*   -- Per Query --   */
+
+@media only screen and (min-width: 1441px) {
+
+/* SEC 1 */
+
+.section1 .s1_contain img.img1_1-2 {
+  left: 0px;
+  height: auto;
+  width: 50vw;
+  bottom: -210px;
+}
+
+}
+@media only screen and (min-width: 1501px) {
+
+  /* SEC 4 */
+
+.section4 .sec4_wrap .s4 {
+  width: 1350px;
+}
+}
+@media only screen and (min-width: 1651px) {
+
+  /* SEC 1 */
+
+.section1 .s1_contain img.img1_1-2 {
+  width: 57vw;
+}
+
+}
+@media only screen and (min-width: 1701px) {
+
+  /* SEC 1 */
+
+.section1 .s1_contain img.img1_2-2 {
+  height: 1350px;
+  bottom: -150px;
+}
+  /* FOOTER */
+.ft .fwrap .f-r .fr-wrap {
+  min-height: 170px;
+}
+
+}
+@media only screen and (min-width: 1901px) {
+
+  /* SEC 1 */
+
+.section1 .s1_contain img.img1_2-2 {
+  height: 1450px;
+  bottom: -200px;
+}
+  /* SEC 4 */
+
+.section4 .sec4_wrap .s4 {
+  width: 100%;
+}
+.section4 .sec4_wrap .s4 .s4box {
+  width: 25%;
+}
+.section4 .sec4_wrap .s4 .s4box:nth-of-type(7) {
+  margin-right: calc(17.6% - 180px);
+}
+
 }
