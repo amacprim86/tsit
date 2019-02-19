@@ -1838,3 +1838,14 @@ input[type=submit] {
   }
 
 }
+@media only screen and (max-width: 1150px) {
+
+  /* SEC 4 */
+  .section4 .sec4_wrap h1 {
+    padding-left: calc(25% - 180px);
+  }
+  .section4 .sec4_wrap .s4 .s4box {
+    max-width: 420px;
+  }
+
+}
