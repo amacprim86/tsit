@@ -66,7 +66,7 @@ font-style: normal;
 .section1 .s1_contain img.img1_1-2 { /* Honey Comb Pattern */
   position: absolute;
   bottom: 0px;
-  left: 0px;
+  left: -25px;
   height: 1200px;
   width: auto;
   z-index: 2;
@@ -160,6 +160,7 @@ font-style: normal;
   line-height: 19px;
   color: #FFFFFF;
   padding-right: 163px;
+  text-transform: uppercase;
 }
 .section1 .s1_pullup .f-pretab .b-wrap img.slider {
   height: 12px;
@@ -247,7 +248,7 @@ transform: rotate(90deg);
   background: transparent;
   opacity: 0.56;
   height: 50px;
-  color: #fff;
+  color: #878787;
 }
 .theform .se9-form form .lin2 {
   width: 100%;
@@ -738,9 +739,9 @@ adp.coi.center@aon.com
 }
 .section4 img.s4bg {
   position: absolute;
-  bottom: -790px;
+  bottom: -600px;
   right: 0px;
-  height: 1190px;
+  height: 1050px;
   width: auto;
 }
 
@@ -754,7 +755,17 @@ adp.coi.center@aon.com
 }
 .section5 .s5-left {
   width: 50%;
+  background-color: #FFF;
+  position: relative;
+}
+
+.section5 .s5-left .s5l-bg {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 470px;
   background-color: #F3F4F6;
+  z-index: 2;
 }
 .section5 .s5-left .s5l-wrap {
   background-image: url("../images/s5_Texas-Live.jpg");
@@ -767,6 +778,8 @@ adp.coi.center@aon.com
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
+  position: relative;
+  z-index: 3;
 }
 .section5 .s5-left .s5l-wrap .s5-textover {
   background: rgba(255, 255, 255, 0.79);
