@@ -137,7 +137,7 @@ font-style: normal;
 }
 .section1 .s1_pullup .f-pretab {
   height: 100px;
-  width: 500px;
+  width: 552px;
   border-radius: 0 5px 0 0;
   background: linear-gradient(180deg, #1182E3 0%, #074BC3 100%);
   position: relative;
@@ -162,36 +162,274 @@ font-style: normal;
   padding-right: 163px;
 }
 .section1 .s1_pullup .f-pretab .b-wrap img.slider {
-  height: 21px;
-  width: 21px;
+  height: 12px;
+  width: auto;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
 -ms-transform: rotate(90deg);
 transform: rotate(90deg);
 }
+/* SEC 1, SLIDE UP FORM */
 .theform {
   display: none;
-  width: 500px;
-  height: 800px;
-  background-color: red;
+  width: 552px;
+  height: 950px;
+  background-color: #fff;
   bottom: 0px;
   position: relative;
+  border-radius: 0 5px 0 0;
   transition: all .5s ease-in-out;
 }
 .theform.form-up {
-  bottom: 700px;
+  bottom: 950px;
   transition: all .5s ease-in-out;
 }
+
+.theform .se9-form {
+  width: 436px;
+  height: 860px;
+  margin: auto;
+  padding-top: 50px;
+}
+.theform .se9-form h1 {
+  font-family: sofia-pro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #28282A;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+}
+.theform .se9-form form {
+  width: 100%;
+  height: auto;
+}
+.theform .se9-form form .lin1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+.theform .se9-form form .lin1 .l1-l {
+  width: 201px;
+  display: flex;
+  flex-direction: column;
+}
+.theform .se9-form form .lin1 .l1-r {
+  width: 214px;
+  display: flex;
+  flex-direction: column;
+}
+.theform .se9-form form label {
+  font-family: sofia-pro;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 19px;
+  color: #878787;
+  opacity: 0.7;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.theform .se9-form form input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #CFD1DA;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: transparent;
+  opacity: 0.56;
+  height: 50px;
+  color: #fff;
+}
+.theform .se9-form form .lin2 {
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.theform .se9-form form .lin3 {
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.theform .se9-form select#inter {
+  -webkit-appearance: textarea;
+}
+.theform .se9-form .selectdiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.theform .se9-form .selectdiv:after {
+    content: '\f0d7';
+    font: normal normal normal 17px/1 FontAwesome;
+    color: #C7C7C7;
+    right: 11px;
+    top: 12px;
+    height: 50px;
+    padding: 20px 25px 0px 30px;
+    border-left: 1px solid #D9DCE2;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+.theform .se9-form select::-ms-expand {
+display: none;
+}
+
+.theform .se9-form .selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  font-family: sofia-pro;
+  font-size: 19px;
+  line-height: 23px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  color: #c3c3c7;
+  background: transparent;
+  opacity: 0.8;
+  border: 1px solid #CFD1DA;
+  -ms-word-break: normal;
+  word-break: normal;
+  margin-top: 12px;
+}
+.theform .se9-form .selectdiv select option {
+  opacity: 0.3;
+}
+
+/* SEC 9 FORM, Field 5 */
+
+.theform .se9-form form .lin5 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+.theform .se9-form form .lin5 .l1-l {
+  width: 248px;
+  display: flex;
+  flex-direction: column;
+}
+.theform .se9-form form .lin5 .l1-r {
+  width: 169px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SEC 9 FORM, Field 6 TextArea */
+
+.theform .se9-form form .lin6 {
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.theform .se9-form form .lin6 textarea.f6 {
+  background-color: transparent;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #CFD1DA;
+  opacity: 0.56;
+  margin-top: 8px;
+  height: 90px;
+  color: #fff;
+}
+/* SEC 9 FORM, Field 7 ReCAPTCHA + SUBMIT */
+
+.theform .se9-form form .lin7 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  position: relative;
+}
+.theform .se9-form form .lin7 .l1-l {
+  width: 274px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+}
+.theform .se9-form form .lin7 .l1-r {
+  width: 186px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  bottom: -150px;
+}
+.theform .se9-form input[type=submit] {
+  width: 100%;
+  background-color: transparent;
+  padding: 14px 12px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: none;
+  font-family: sofia-pro;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 19px;
+  color: #28282A;
+  text-transform: uppercase;
+}
+
+/* -------------- */
+/* SEC 1 FORM END */
+/* -------------- */
+
+/*
+Form goes to: -
+certrequest@bradleyinsurance.com
+AND
+adp.coi.center@aon.com
+(can we reference QT8 in the subject line?)
+*/
 
 .theform .f-close {
   height: 90px;
   width: 81px;
   background-color: #074BC3;
-  position: relative;
-  left: 420px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 471px;
+  border-radius: 0 5px 0 0;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
+.theform .f-close .iclose {
+  height: 14px;
+  width: auto;
+  transform: rotate(-90deg);
+  margin: auto;
+}
+
 .no-show {
   display: none;
 }
@@ -1264,6 +1502,8 @@ input[type=submit] {
   min-height: 350px;
   display: flex;
   align-items: center;
+  padding-left: 2%;
+  text-align: right;
 }
 
 .ft .fwrap .f-l a.logo-f img.logo-ft {
@@ -1282,4 +1522,49 @@ input[type=submit] {
   opacity: 0.89;
   color: #FFFFFF;
   padding-top: 40px;
+}
+
+.ft .fwrap .f-r .fr-wrap {
+  width: 100%;
+  height: auto;
+  min-height: 190px;
+  position: relative;
+}
+.ft .fwrap .f-r .fr-wrap .fr_top {
+  display: flex;
+  justify-content: flex-end;
+}
+.ft .fwrap .f-r .fr-wrap .fr_top a {
+  font-family: sofia-pro;
+  font-size: 19px;
+  line-height: 23px;
+  color: #FFFFFF;
+  padding: 20px;
+}
+.ft .fwrap .f-r .fr-wrap .fr_top a.f-phn {
+  padding-right: 0px;
+}
+
+.ft .fwrap .f-r .fr-wrap .fr_bot {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.ft .fwrap .f-r .fr-wrap .fr_bot h4 {
+  font-family: sofia-pro;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.ft .fwrap .f-r .fr-wrap .fr_bot h4 a {
+  font-family: sofia-pro;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 12px;
 }
